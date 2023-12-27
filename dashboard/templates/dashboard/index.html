@@ -1,11 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Login</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% comment %} <div class="bg-white rounded shadow p-3">
+    <div class="lg:flex lg:justify-between lg:items-center">
+      <h1 class="text-center font-bold my-3">My Account</h1>
+      <a href="" class="border border-zinc-500 text-zinc-500 hover:bg-zinc-500 hover:text-white px-5 py-1 my-2 font-thin w-fit hidden lg:block">+ Create New Account</a>
+    </div>
+    <hr>
+    <div class="my-3 flex justify-between items-center">
+        <div class="flex gap-3">
+            <h2>Account: </h2>
+            <select name="" id="" class="border">
+                <option value="Real">Real</option>
+                <option value="Demo">Demo</option>
+            </select>
+        </div>
+        <div class="flex">
+            <a href="" class="hover:bg-blue-500/30 group">
+                <div class="border px-3 group-hover:border-blue-500">
+                    <i class="mdi mdi-menu text-2xl"></i>
+                </div>
+            </a>
+            <a href="" class="hover:bg-blue-500/30 group">
+                <div class="border px-3 group-hover:border-blue-500">
+                    <i class="mdi mdi-view-grid-outline text-2xl"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<a href="" class="bg-red-500 lg:hidden">
+    <div class="px-3">
+        <div class="bg-white rounded w-full my-3 p-3 shadow-sm flex justify-center items-center gap-2">
+            <i class="mdi mdi-layers-plus text-3xl text-blue-500"></i>
+            <h3>Create New Account</h3>
+        </div>
+    </div>
+</a>
+
+<div class="bg-white rounded shadow-sm p-3 lg:p-10 flex flex-col gap-2 my-3">
+  <div>
+    <div>
+      <div class="border w-full p-3">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-emerald-700 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">Demo</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">MT5</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">ECN</h4>
+                </div>
+                <h1 class="font-medium">Juan Garcia / 6652498</h1>
+            </div>
+            <a href="">
+                <i class="mdi mdi-dots-vertical text-3xl"></i>
+            </a>
+        </div>
+        <div class="my-2 lg:flex lg:justify-between lg:items-center">
+            <h2 class="text-lg lg:text-xl"><span class="font-bold text-2xl lg:text-3xl">500</span>.00 USD</h2>
+            <div class="lg:flex gap-2 hidden">
+              <form action="">
+                <button class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-5 py-1 my-2 font-thin">Deposit</8button>
+              </form>
+              <form action="">
+                <button class="border border-zinc-500 text-zinc-500 hover:bg-zinc-500 hover:text-white px-5 py-1 my-2 font-thin">Withdrawl</8button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-2 lg:hidden">
+      <form action="">
+        <button class="bg-blue-500 text-white px-2 py-1 my-2 rounded">Deposit</8button>
+      </form>
+      <form action="">
+        <button class="bg-zinc-500 text-white px-2 py-1 my-2 rounded">Withdrawl</8button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="border w-full p-3">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-emerald-700 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">Demo</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">MT5</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">ECN</h4>
+                </div>
+                <h1 class="font-medium">Juan Garcia / 6652498</h1>
+            </div>
+            <a href="">
+                <i class="mdi mdi-dots-vertical text-3xl"></i>
+            </a>
+        </div>
+        <div class="my-2 lg:flex lg:justify-between lg:items-center">
+            <h2 class="text-lg lg:text-xl"><span class="font-bold text-2xl lg:text-3xl">500</span>.00 USD</h2>
+            <div class="lg:flex gap-2 hidden">
+              <form action="">
+                <button class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-5 py-1 my-2 font-thin">Deposit</8button>
+              </form>
+              <form action="">
+                <button class="border border-zinc-500 text-zinc-500 hover:bg-zinc-500 hover:text-white px-5 py-1 my-2 font-thin">Withdrawl</8button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-2 lg:hidden">
+      <form action="">
+        <button class="bg-blue-500 text-white px-2 py-1 my-2 rounded">Deposit</8button>
+      </form>
+      <form action="">
+        <button class="bg-zinc-500 text-white px-2 py-1 my-2 rounded">Withdrawl</8button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="border w-full p-3">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-emerald-700 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">Demo</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">MT5</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">ECN</h4>
+                </div>
+                <h1 class="font-medium">Juan Garcia / 6652498</h1>
+            </div>
+            <a href="">
+                <i class="mdi mdi-dots-vertical text-3xl"></i>
+            </a>
+        </div>
+        <div class="my-2 lg:flex lg:justify-between lg:items-center">
+            <h2 class="text-lg lg:text-xl"><span class="font-bold text-2xl lg:text-3xl">500</span>.00 USD</h2>
+            <div class="lg:flex gap-2 hidden">
+              <form action="">
+                <button class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-5 py-1 my-2 font-thin">Deposit</8button>
+              </form>
+              <form action="">
+                <button class="border border-zinc-500 text-zinc-500 hover:bg-zinc-500 hover:text-white px-5 py-1 my-2 font-thin">Withdrawl</8button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-2 lg:hidden">
+      <form action="">
+        <button class="bg-blue-500 text-white px-2 py-1 my-2 rounded">Deposit</8button>
+      </form>
+      <form action="">
+        <button class="bg-zinc-500 text-white px-2 py-1 my-2 rounded">Withdrawl</8button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="border w-full p-3">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-emerald-700 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">Demo</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">MT5</h4>
+                </div>
+                <div class="bg-zinc-400 py-[0.14rem] px-1">
+                    <h4 class="text-xs font-semibold text-white">ECN</h4>
+                </div>
+                <h1 class="font-medium">Juan Garcia / 6652498</h1>
+            </div>
+            <a href="">
+                <i class="mdi mdi-dots-vertical text-3xl"></i>
+            </a>
+        </div>
+        <div class="my-2 lg:flex lg:justify-between lg:items-center">
+            <h2 class="text-lg lg:text-xl"><span class="font-bold text-2xl lg:text-3xl">500</span>.00 USD</h2>
+            <div class="lg:flex gap-2 hidden">
+              <form action="">
+                <button class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-5 py-1 my-2 font-thin">Deposit</8button>
+              </form>
+              <form action="">
+                <button class="border border-zinc-500 text-zinc-500 hover:bg-zinc-500 hover:text-white px-5 py-1 my-2 font-thin">Withdrawl</8button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-2 lg:hidden">
+      <form action="">
+        <button class="bg-blue-500 text-white px-2 py-1 my-2 rounded">Deposit</8button>
+      </form>
+      <form action="">
+        <button class="bg-zinc-500 text-white px-2 py-1 my-2 rounded">Withdrawl</8button>
+      </form>
+    </div>
+  </div>
+</div> {% endcomment %}
+{% endblock content %}

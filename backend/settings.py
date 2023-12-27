@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'profile_dj',
-    'dashboard'
+    'dashboard',
+    # 'deposit'
 ]
 
 MIDDLEWARE = [

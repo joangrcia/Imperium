@@ -77,7 +77,7 @@
     </div>
 
     <!-- sidebar -->
-    <nav id="sidebar" class="min-h-screen min-w-full absolute bg-black px-5 py-2 z-50 lg:hidden" style="display: none;">
+    <nav id="sidebar" class="h-full min-w-full absolute bg-black px-5 py-2 z-50 lg:hidden" style="display: none;">
         <ul>
             <li>
                 <div class="border-t border-zinc-700 py-2">
@@ -199,148 +199,153 @@
         </ul>
     </nav>
 
-    <div class="w-full lg:flex lg:justify-center lg:items-center my-2 lg:gap-2">
-        <div class="lg:w-[65%] flex flex-col gap-5">
-            <nav class="hidden lg:flex lg:justify-center lg:items-center lg:w-full">
-                <ul class="grid grid-cols-5 gap-5 justify-center items-center">
-                    <li class="bg-white rounded">
-                        <a href="">
+    <div class="w-full lg:flex lg:justify-center lg:items-center my-5 lg:gap-2">
+        <div class="lg:w-[60%] px-5 py-5 lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-5 bg-white rounded">     
+
+            <div class="h-full p-2 hidden lg:block lg:w-fit bg-slate-100 rounded">
+                <ul class="">
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
                             <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-view-grid-outline text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">My Account</h1>
+                                <i class="mdi mdi-view-grid-outline text-black group-hover:text-blue-500 text-sm"></i>
+                                <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">My Account</h1>
                             </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-download text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Deposit</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-upload text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Withdrawls</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-history text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Transaction History</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-wallet text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Crypto Wallet</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-home-analytics text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Analytic</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-office-building text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Portofolio</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-wallet text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Invesment Wallet</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-google-analytics text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Performance</h1>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="bg-white rounded">
-                        <a href="">
-                            <div class="my-6 flex flex-col items-center gap-2">
-                                <i class="mdi mdi-cog text-black text-sm"></i>
-                                <h1 class="text-black text-xs text-center font-medium">Settings</h1>
-                            </div>
-                        </a>
-                    </li>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-download text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Deposit</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-upload text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Withdrawls</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-history text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Transaction</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-wallet text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Crypto Wallet</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-home-analytics text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Analytic</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-office-building text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Portofolio</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-wallet text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Invesment Wallet</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-google-analytics text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Performance</h1>
+                                </div>
+                        </li>
+                    </a>
+                    <a href="" class="bg-white rounded hover:bg-slate-400 group">
+                        <li>
+                                <div class="my-6 flex flex-col items-center gap-2">
+                                    <i class="mdi mdi-cog text-black text-sm group-hover:text-blue-500"></i>
+                                    <h1 class="text-black text-xs group-hover:text-blue-500 text-center font-medium">Settings</h1>
+                                </div>
+                        </li>
+                    </a>
                 </ul>
-            </nav class="hidden lg:block">
-            <main class="mx-5">
-                <div class='p-5 bg-white rounded min-h-screen'>
+            </div>
+
+            <main class="lg:w-full">
+                <div>
                     {% block content %}
-                    <p>lorem500</p>
+                    
                     {% endblock content %}
                 </div>
             </main>
+
         </div>
     </div>
 
-    <footer class="bg-gray-100 dark:bg-gray-900 w-full z-40 px-5">
-        <div class=" border-b py-5">
-            <p class="text-xs text-zinc-500">E​xness (SC) LTD ​is a Securities Dealer registered in Seychelles with registration number 8423606-1 and authorised by the Financial Services Authority (FSA) with licence number SD025. The registered office of E​xness (SC) LTD is at 9A CT House, 2nd floor, Providence, Mahe, Seychelles.
+    <footer class="bg-gray-100 dark:bg-gray-900 w-full z-40 px-5 flex flex-col gap-2 justify-center items-center">
+        <div class="lg:w-[65%]">
+            <div class=" border-b py-5">
+                <p class="text-xs text-zinc-500">E​xness (SC) LTD ​is a Securities Dealer registered in Seychelles with registration number 8423606-1 and authorised by the Financial Services Authority (FSA) with licence number SD025. The registered office of E​xness (SC) LTD is at 9A CT House, 2nd floor, Providence, Mahe, Seychelles.
+                    <br>
+                    <br>
+                The information on this website may only be copied with the express written permission of Exness. General Risk Warning: CFDs are leveraged products. Trading in CFDs carries a high level of risk thus may not be appropriate for all investors. The investment value can both increase and decrease and the investors may lose all their invested capital. Under no circumstances shall the Company have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs. <a href="" class="underline decoration-black">Learn more</a>
                 <br>
                 <br>
-            The information on this website may only be copied with the express written permission of Exness. General Risk Warning: CFDs are leveraged products. Trading in CFDs carries a high level of risk thus may not be appropriate for all investors. The investment value can both increase and decrease and the investors may lose all their invested capital. Under no circumstances shall the Company have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to CFDs. <a href="" class="underline decoration-black">Learn more</a>
-            <br>
-            <br>
-            Exness complies with the Payment Card Industry Data Security Standard (PCI DSS) to ensure your security and privacy. We conduct regular vulnerability scans and penetration tests in accordance with the PCI DSS requirements for our business model.</p>
-        </div>
-        <div class=" border-b py-5 w-full lg:flex lg:justify-between">
-            <ul class="lg:flex lg:flex-wrap lg:gap-5 lg:w-1/2">
-                <li class="my-5">
-                    <a href="">
-                        <p class="text-xs lg:text-sm underline">Privacy Agreement</p>
-                    </a>
-                </li>
-                <li class="my-5">
-                    <a href="">
-                        <p class="text-xs lg:text-sm underline">Risk Disclosure</p>
-                    </a>
-                </li>
-                <li class="my-5">
-                    <a href="">
-                        <p class="text-xs lg:text-sm underline">Preventing Money Laundring</p>
-                    </a>
-                </li>
-                <li class="my-5">
-                    <a href="">
-                        <p class="text-xs lg:text-sm underline">Security Instractions</p>
-                    </a>
-                </li>
-                <li class="my-5">
-                    <a href="">
-                        <p class="text-xs lg:text-sm underline">Legal Documents</p>
-                    </a>
-                </li>
-            </ul>
-            <div class="lg:flex lg:flex-col lg:gap-3 lg:py-5 lg:text-sm hidden">
-                <h4>info@imperium.com</h4>
-                <h3>© 2023. Imperium</h3>
+                Exness complies with the Payment Card Industry Data Security Standard (PCI DSS) to ensure your security and privacy. We conduct regular vulnerability scans and penetration tests in accordance with the PCI DSS requirements for our business model.</p>
             </div>
-        </div>
-        <div class="flex justify-between py-5 text-xs lg:hidden">
-            <h3>© 2023. Imperium</h3>
-            <h4>info@imperium.com</h4>
+            <div class=" border-b py-5 w-full lg:flex lg:justify-between">
+                <ul class="lg:flex lg:flex-wrap lg:gap-5">
+                    <li class="my-5">
+                        <a href="">
+                            <p class="text-xs lg:text-sm underline">Privacy Agreement</p>
+                        </a>
+                    </li>
+                    <li class="my-5">
+                        <a href="">
+                            <p class="text-xs lg:text-sm underline">Risk Disclosure</p>
+                        </a>
+                    </li>
+                    <li class="my-5">
+                        <a href="">
+                            <p class="text-xs lg:text-sm underline">Preventing Money Laundring</p>
+                        </a>
+                    </li>
+                    <li class="my-5">
+                        <a href="">
+                            <p class="text-xs lg:text-sm underline">Security Instractions</p>
+                        </a>
+                    </li>
+                    <li class="my-5">
+                        <a href="">
+                            <p class="text-xs lg:text-sm underline">Legal Documents</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="lg:flex lg:flex-col lg:gap-3 lg:py-5 lg:text-sm hidden">
+                    <h4>info@imperium.com</h4>
+                    <h3>© 2023. Imperium</h3>
+                </div>
+            </div>
+            <div class="flex justify-between py-5 text-xs lg:hidden">
+                <h3>© 2023. Imperium</h3>
+                <h4>info@imperium.com</h4>
+            </div>
         </div>
     </footer>
 
