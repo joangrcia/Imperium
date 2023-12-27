@@ -31,17 +31,17 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <!-- Twitter -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary"> 
 <meta name="twitter:site" content="@">
 <meta name="twitter:creator" content="@">
-{% block title %}{% endblock title %}
-{% block description %}{% endblock description %}
+{% block twit_title %}{% endblock twit_title %}
+{% block twit_description %}{% endblock twit_description %}
 <meta name="twitter:image" content="https://flowbite-admin-dashboard.vercel.app/images/og-image.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="https://flowbite-admin-dashboard.vercel.app/authentication/sign-in/">
-{% block title %}{% endblock title %}
-{% block description %}{% endblock description %}
+{% block og_title %}{% endblock og_title %}
+{% block og_description %}{% endblock og_description %}
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://flowbite-admin-dashboard.vercel.app/images/og-image.png">
 <meta property="og:image:type" content="image/png">
@@ -59,13 +59,25 @@
     
     <!-- Header -->
     <div class="bg-black h-[64px] flex justify-between items-center px-5">
-        <i class="mdi mdi-menu text-white text-3xl sdf" id="openSidebarBtn"></i>
+        <i class="mdi mdi-menu text-white text-3xl sdf lg:hidden" id="openSidebarBtn"></i>
         <h1 class="text-white">Imperium</h1>
-        <i class="mdi mdi-bell-outline text-white text-2xl"></i>
+        <div class="flex justify-center items-center gap-5">
+            <h1 class="text-white font-medium text-2xl hidden lg:block"><span class="font-bold">0.00</span> USD</h1>
+            <a href="" class="hidden lg:block">
+                <div class="my-6 flex items-center gap-2">
+                    <i class="mdi mdi-earth text-zinc-400 text-xl"></i>
+                    <h1 class="text-white">EN</h1>
+                </div>
+            </a>
+            <i class="mdi mdi-bell-outline text-white text-2xl"></i>
+            <a href="">
+                <i class="mdi mdi-account text-white text-2xl hidden lg:block"></i>
+            </a>
+        </div>
     </div>
 
     <!-- sidebar -->
-    <nav id="sidebar" class="min-h-screen min-w-full absolute bg-black px-5 py-2 z-50" style="display: none;">
+    <nav id="sidebar" class="min-h-screen min-w-full absolute bg-black px-5 py-2 z-50 lg:hidden" style="display: none;">
         <ul>
             <li>
                 <div class="border-t border-zinc-700 py-2">
@@ -187,13 +199,101 @@
         </ul>
     </nav>
 
-    <main>
-        <div class="bg-white">
-            {% block content %}
-            
-            {% endblock content %}
+    <div class="w-full lg:flex lg:justify-center lg:items-center my-2 lg:gap-2">
+        <div class="lg:w-[65%] flex flex-col gap-5">
+            <nav class="hidden lg:flex lg:justify-center lg:items-center lg:w-full">
+                <ul class="grid grid-cols-5 gap-5 justify-center items-center">
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-view-grid-outline text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">My Account</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-download text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Deposit</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-upload text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Withdrawls</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-history text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Transaction History</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-wallet text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Crypto Wallet</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-home-analytics text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Analytic</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-office-building text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Portofolio</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-wallet text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Invesment Wallet</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-google-analytics text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Performance</h1>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="bg-white rounded">
+                        <a href="">
+                            <div class="my-6 flex flex-col items-center gap-2">
+                                <i class="mdi mdi-cog text-black text-sm"></i>
+                                <h1 class="text-black text-xs text-center font-medium">Settings</h1>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav class="hidden lg:block">
+            <main class="mx-5">
+                <div class='p-5 bg-white rounded min-h-screen'>
+                    {% block content %}
+                    <p>lorem500</p>
+                    {% endblock content %}
+                </div>
+            </main>
         </div>
-    </main>
+    </div>
 
     <footer class="bg-gray-100 dark:bg-gray-900 w-full z-40 px-5">
         <div class=" border-b py-5">
@@ -205,36 +305,40 @@
             <br>
             Exness complies with the Payment Card Industry Data Security Standard (PCI DSS) to ensure your security and privacy. We conduct regular vulnerability scans and penetration tests in accordance with the PCI DSS requirements for our business model.</p>
         </div>
-        <div class=" border-b py-5">
-            <ul>
+        <div class=" border-b py-5 w-full lg:flex lg:justify-between">
+            <ul class="lg:flex lg:flex-wrap lg:gap-5 lg:w-1/2">
                 <li class="my-5">
                     <a href="">
-                        <p class="text-xs underline">Privacy Agreement</p>
+                        <p class="text-xs lg:text-sm underline">Privacy Agreement</p>
                     </a>
                 </li>
                 <li class="my-5">
                     <a href="">
-                        <p class="text-xs underline">Risk Disclosure</p>
+                        <p class="text-xs lg:text-sm underline">Risk Disclosure</p>
                     </a>
                 </li>
                 <li class="my-5">
                     <a href="">
-                        <p class="text-xs underline">Preventing Money Laundring</p>
+                        <p class="text-xs lg:text-sm underline">Preventing Money Laundring</p>
                     </a>
                 </li>
                 <li class="my-5">
                     <a href="">
-                        <p class="text-xs underline">Security Instractions</p>
+                        <p class="text-xs lg:text-sm underline">Security Instractions</p>
                     </a>
                 </li>
                 <li class="my-5">
                     <a href="">
-                        <p class="text-xs underline">Legal Documents</p>
+                        <p class="text-xs lg:text-sm underline">Legal Documents</p>
                     </a>
                 </li>
             </ul>
+            <div class="lg:flex lg:flex-col lg:gap-3 lg:py-5 lg:text-sm hidden">
+                <h4>info@imperium.com</h4>
+                <h3>© 2023. Imperium</h3>
+            </div>
         </div>
-        <div class="flex justify-between py-5 text-xs">
+        <div class="flex justify-between py-5 text-xs lg:hidden">
             <h3>© 2023. Imperium</h3>
             <h4>info@imperium.com</h4>
         </div>

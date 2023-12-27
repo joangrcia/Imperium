@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'custom_user.apps.CustomUserConfig',
     'tailwind',
     'theme',
-    'profile_dj'
+    'profile_dj',
+    'dashboard'
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Menyimpan file-file media sepert
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+LOGIN_URL = 'login'  # Ganti dengan URL halaman login kustom Anda
+LOGIN_REDIRECT_URL = 'login'  # Ganti dengan URL halaman login kustom Anda
+LOGOUT_REDIRECT_URL = 'login'  # Ganti dengan URL halaman login kustom Anda
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
